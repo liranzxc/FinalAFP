@@ -1,16 +1,24 @@
 ﻿  
-  B:\finalParallelAfeka\ParallelPerceptron>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "B:\finalParallelAfeka\ParallelPerceptron\kernel.cu" -clean 
+  B:\finalParallelAfeka\FinalAFP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\CudauUtils.cu.obj "B:\finalParallelAfeka\FinalAFP\CudauUtils.cu" -clean 
+  CudauUtils.cu
+  
+  B:\finalParallelAfeka\FinalAFP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "B:\finalParallelAfeka\FinalAFP\kernel.cu" -clean 
   kernel.cu
+  Compiling CUDA source file CudauUtils.cu...
   Compiling CUDA source file kernel.cu...
   
-  B:\finalParallelAfeka\ParallelPerceptron>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc140.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "B:\finalParallelAfeka\ParallelPerceptron\kernel.cu" 
+  B:\finalParallelAfeka\FinalAFP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc140.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CudauUtils.cu.obj "B:\finalParallelAfeka\FinalAFP\CudauUtils.cu" 
+  
+  B:\finalParallelAfeka\FinalAFP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc140.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "B:\finalParallelAfeka\FinalAFP\kernel.cu" 
+  CudauUtils.cu
   kernel.cu
   util.cpp
   program.cpp
-b:\finalparallelafeka\parallelperceptron\program.cpp(207): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-b:\finalparallelafeka\parallelperceptron\program.cpp(208): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-b:\finalparallelafeka\parallelperceptron\program.cpp(209): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+b:\finalparallelafeka\finalafp\program.cpp(175): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+b:\finalparallelafeka\finalafp\program.cpp(176): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+b:\finalparallelafeka\finalafp\program.cpp(177): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  IO.cpp
   Generating Code...
-     Creating library B:\finalParallelAfeka\ParallelPerceptron\x64\Debug\ParallelPerceptron.lib and object B:\finalParallelAfeka\ParallelPerceptron\x64\Debug\ParallelPerceptron.exp
-  ParallelPerceptron.vcxproj -> B:\finalParallelAfeka\ParallelPerceptron\x64\Debug\ParallelPerceptron.exe
-  ParallelPerceptron.vcxproj -> B:\finalParallelAfeka\ParallelPerceptron\x64\Debug\ParallelPerceptron.pdb (Full PDB)
+     Creating library B:\finalParallelAfeka\FinalAFP\x64\Debug\ParallelPerceptron.lib and object B:\finalParallelAfeka\FinalAFP\x64\Debug\ParallelPerceptron.exp
+  ParallelPerceptron.vcxproj -> B:\finalParallelAfeka\FinalAFP\x64\Debug\ParallelPerceptron.exe
+  ParallelPerceptron.vcxproj -> B:\finalParallelAfeka\FinalAFP\x64\Debug\ParallelPerceptron.pdb (Full PDB)
