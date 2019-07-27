@@ -1,3 +1,13 @@
+/**
+ * @file CudauUtils.h
+ * @author Liran Nachman (lirannh@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-07-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
@@ -8,15 +18,15 @@ cudaError_t FreeFunction(double * dev_W, double * dev_alfa, int * dev_mislead)
 {
 	cudaError_t cudaStatus;
 	cudaStatus = cudaFree(dev_W);
-	if (cudaStatus != cudaSuccess) 
+	if (cudaStatus != cudaSuccess)
 		printf("failed to free cuda - W  \n");
 
 	cudaStatus = cudaFree(dev_mislead);
-	if (cudaStatus != cudaSuccess) 
+	if (cudaStatus != cudaSuccess)
 		printf("failed to free cuda - mislead points \n");
 
 	cudaStatus = cudaFree(dev_alfa);
-	if (cudaStatus != cudaSuccess) 
+	if (cudaStatus != cudaSuccess)
 		printf("failed to free cuda - alfa \n");
 
 
@@ -114,7 +124,7 @@ double ProcessAlfa(Point * dev_pts, double* dev_values, double  * alfa, int *dev
 	MyCudaMalloc((void**)&dev_alfa, sizeof(double), 11);
 	MyCudaCopy(dev_alfa, alfa, sizeof(double), cudaMemcpyHostToDevice, 12);
 
-	
+
 
 	MyCudaCopy(dev_n, &n, sizeof(int), cudaMemcpyHostToDevice, 14);
 
@@ -171,11 +181,11 @@ double ProcessAlfa(Point * dev_pts, double* dev_values, double  * alfa, int *dev
 			*alfa = fabs(*alfa); // back to postive alfa because we modified him on gpu.
 			int indexValues = indexerMiss * (k + 1); // n* (K+1)
 			int * dev_index_values = NULL;
-			
+
 			//index_values , the pointer for coordinates of point ,note values array size n*(k+1) 
 			MyCudaMalloc((void**)&dev_index_values, sizeof(int), 88);
 			MyCudaCopy(dev_index_values, &indexValues, sizeof(int), cudaMemcpyHostToDevice, 99);
-			
+
 
 			//create a new weight
 			createNewWeight << <1, k + 1 >> > (dev_alfa, dev_values, dev_index_values, dev_W);
@@ -199,7 +209,7 @@ double ProcessAlfa(Point * dev_pts, double* dev_values, double  * alfa, int *dev
 	}
 
 	//// need to calcate the q 
-	
+
 	int sumOFmisLead = 0;
 	for (int i = 0; i < n; i++)
 	{

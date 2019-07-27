@@ -1,10 +1,19 @@
-
-
+/**
+ * @file program.cpp
+ * @author Liran Nachman (lirannh@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-07-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include <omp.h>
 #include "mpi.h"
 #include "IO.h"
 #include "cudaUtils.h"
 #include "util.h"
+
 
 int main(int argc, char *argv[])
 {

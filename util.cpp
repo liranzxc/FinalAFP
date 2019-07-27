@@ -1,3 +1,14 @@
+/**
+ * @file util.cpp
+ * @author Liran Nachman (lirannh@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-07-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
+
 #include "util.h"
 #include "cudaUtils.h"
 

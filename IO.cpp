@@ -1,3 +1,13 @@
+/**
+ * @file IO.cpp
+ * @author Liran Nachman (lirannh@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-07-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #define _CRT_SECURE_NO_WARNINGS
 #include "IO.h"
 int readFromFile(char * path, Point ** pts, int * n, int * k,

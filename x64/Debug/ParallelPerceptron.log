@@ -14,9 +14,9 @@
   kernel.cu
   util.cpp
   program.cpp
-d:\finalafp\program.cpp(175): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 d:\finalafp\program.cpp(176): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 d:\finalafp\program.cpp(177): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\finalafp\program.cpp(178): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   IO.cpp
   Generating Code...
      Creating library D:\FinalAFP\x64\Debug\ParallelPerceptron.lib and object D:\FinalAFP\x64\Debug\ParallelPerceptron.exp
