@@ -13,7 +13,7 @@ void mallocConstCuda(Point * pts, int n, int k, Point ** dev_pts, int ** dev_n, 
 
 void MyCudaFree(void * object, int error_label);
 
-cudaError_t FreeFunction(double * dev_W, double  * dev_alfa, int * dev_mislead, int * dev_tempresult);
+cudaError_t FreeFunction(double * dev_W, double  * dev_alfa, int * dev_mislead);
 
 double ProcessAlfa(Point * dev_pts, double* dev_values, double  * alfa, int *dev_n
 	, int *dev_k, int limit, double QC, int n, int k, double ** WSaved);
