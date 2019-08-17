@@ -196,25 +196,71 @@ int main(int argc, char *argv[])
 			if (miniumOfminimusAlfas != -1)
 			{
 
+				FILE *fptr;
+				char * pathdesc = argv[1];
+				char * fileNameOutput = ".output.txt";
+				strcat(pathdesc, fileNameOutput);
+				fptr = fopen(pathdesc, "w");
+				if (fptr == NULL)
+				{
+					printf("Error! create output file");
+					exit(1);
+				}
+
+
 				printf("Found results : \n");
 				fflush(NULL);
 
 				printf("alfa %f , q = %lf , from process %d \n", miniumOfminimusAlfas, minQFound, myrank);
 				fflush(NULL);
 
+				fprintf(fptr,"alfa %f , q = %lf , from process %d \n", miniumOfminimusAlfas, minQFound, myrank);
+
+
 				printf("mini value of W : [");
+
+				fprintf(fptr,"mini value of W : [");
+
+
 				for (int i = 0; i < k + 1; i++)
 				{
 					printf("%f,", minWFound[i]);
 					fflush(NULL);
 
+					fprintf(fptr,"%f,", minWFound[i]);
+
 
 				}
 				printf("] \n");
 				fflush(NULL);
+
+
+				fprintf(fptr,"] \n");
+
+
+				fclose(fptr);
+				
 			}
 			else
 			{
+
+				FILE *fptr;
+
+				char * pathdesc = argv[1];
+				char * fileNameOutput = ".output.txt";
+				strcat(pathdesc, fileNameOutput);
+
+				fptr = fopen(pathdesc, "w");
+				if (fptr == NULL)
+				{
+					printf("Error! create output file");
+					exit(1);
+				}
+
+				fprintf(fptr, "%s", "Alfa not found");
+				fclose(fptr);
+
+
 				printf("Alfa not found !");
 				fflush(NULL);
 
