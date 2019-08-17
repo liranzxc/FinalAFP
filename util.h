@@ -7,7 +7,7 @@
 #include <stdarg.h>
 #include <stdexcept>
 #define MASTER 0
-#define NUM_ALFA_TO_SEND_EACH_PROCESS 1
+#define NUM_ALFA_TO_SEND_EACH_PROCESS 4
 struct Point
 {
 	int group;
