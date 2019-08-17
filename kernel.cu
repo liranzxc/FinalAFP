@@ -1,3 +1,13 @@
+/**
+ * @file kernel.cu
+ * @author Liran Nachman (lirannh@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2019-07-27
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
