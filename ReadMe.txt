@@ -7,3 +7,7 @@
 
 //linker config 
 // 3)C:\Program Files\MPICH2\lib\mpi.lib; % (AdditionalDependencies)
+
+
+** Note **
+more information about this project , please check Doc folder.
