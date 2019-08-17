@@ -16,15 +16,12 @@
 #include <stdexcept>
 #define MASTER 0
 #define NUM_ALFA_TO_SEND_EACH_PROCESS 4
-<<<<<<< HEAD
-=======
 
 /**
  * point struct 
  * int group - assign group of point
  * double values - a coordinates array of points size K+1 
  */ 
->>>>>>> 2946dfd6e9f6b66b9dcec86932d2d13e12e48bb9
 struct Point
 {
 	int group;
